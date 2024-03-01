@@ -1,0 +1,13 @@
+{
+  "name": "trpc-wslink-bug-reproduction",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach -Api --topological-dev run build",
+    "start": "yarn workspaces foreach -Api run start",
+    "dev": "yarn workspaces foreach -Api run dev"
+  },
+  "packageManager": "yarn@4.1.0"
+}
